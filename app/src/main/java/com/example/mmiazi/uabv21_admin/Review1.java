@@ -1,5 +1,6 @@
 package com.example.mmiazi.uabv21_admin;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RatingBar;
@@ -67,5 +68,14 @@ public class Review1 extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
