@@ -64,6 +64,24 @@ public class MainActivity extends AppCompatActivity {
 
         clearButton = findViewById(R.id.buttonClear);
 
+        sendReview = findViewById(R.id.buttonService);
+        sendRestaurant = findViewById(R.id.buttonRestaurant);
+
+        sendReview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                databaseReference = firebaseDatabase.getReference();
+                databaseReference.child("signalFromAdmin/command").setValue("advertised1");
+            }
+        });
+        sendRestaurant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                databaseReference = firebaseDatabase.getReference();
+                databaseReference.child("signalFromAdmin/command").setValue("advertised2");
+            }
+        });
+
         clearButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
