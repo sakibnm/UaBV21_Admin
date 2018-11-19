@@ -62,26 +62,42 @@
 
         </android.support.v7.widget.CardView>
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="320dp"
-            android:layout_height="184dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@mipmap/review1_photo_foreground"
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="2"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_userName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar1" />
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="320dp"
+                android:layout_height="220dp"
+                android:layout_margin="0dp"
+                android:accessibilityHeading="false"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/review1_foreground" />
+        </android.support.v7.widget.CardView>
 
         <TextView
             android:id="@+id/tv_userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="96dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            android:layout_margin="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView1"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/tv_userReview"

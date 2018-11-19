@@ -18,8 +18,9 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../review2_foreground.png" />
-                                      <entry key="outputName" value="review2_photo" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../Screen Shot 2018-11-18 at 1.53.53 PM.png" />
+                                      <entry key="foregroundLayerName" value="review1_foreground" />
+                                      <entry key="outputName" value="review1_photo" />
                                     </map>
                                   </option>
                                 </PersistentState>

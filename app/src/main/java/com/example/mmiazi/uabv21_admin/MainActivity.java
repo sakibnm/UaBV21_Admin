@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-//nothing
+
         clearButton = findViewById(R.id.buttonClear);
 
         sendReview = findViewById(R.id.buttonService);
