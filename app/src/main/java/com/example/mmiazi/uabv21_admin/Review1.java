@@ -117,7 +117,8 @@ public class Review1 extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String val = dataSnapshot.getValue(String.class);
-                float rate = Float.parseFloat(val);
+                float rate= 0;
+                if(!val.equals("empty"))rate = Float.parseFloat(val);
                 ratingBar.setRating(rate);
             }
 

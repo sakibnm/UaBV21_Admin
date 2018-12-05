@@ -89,8 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
                 databaseReference.child("fromUser/review1/rating").setValue("empty");
                 databaseReference.child("fromUser/review1/comment").setValue("empty");
+                databaseReference.child("fromUser/review1/isNameShared").setValue("false");
+                databaseReference.child("fromUser/review1/isPhotoShared").setValue("false");
                 databaseReference.child("fromUser/review2/rating").setValue("empty");
                 databaseReference.child("fromUser/review2/comment").setValue("empty");
+                databaseReference.child("fromUser/review2/isNameShared").setValue("false");
+                databaseReference.child("fromUser/review2/isPhotoShared").setValue("false");
 
                 databaseReference.child("signalFromAdmin/command").setValue("empty");
                 databaseReference.child("signalToAdmin/command").setValue("empty");
